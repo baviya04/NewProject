@@ -103,7 +103,7 @@ driver.findElement(By.id("SignInNow")).click();
     @Then("^I should able to purchase successfully$")
     public void i_should_able_to_purchase_successfully() throws Throwable {
 
-        obj.closebrowser();
+        //obj.closebrowser();
     }
 
 
