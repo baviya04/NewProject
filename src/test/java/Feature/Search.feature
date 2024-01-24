@@ -19,8 +19,30 @@
      Then I should able to login successfully
 
    Scenario: Validate the Complete Checkout
+     Given I am on Home page
      When I add an item in the shopping cart
      Then I should able to purchase successfully
+
+  Scenario: Validate the Brand tab
+    Given  I am on Home page
+    When I click on brand and select the brand
+    Then I should able to see the selected brand
+
+    @Smoke
+    Scenario Outline: Validate the search functionality
+      Given I am on Home page
+      When I enter "<prod>"
+      Then I should see "<result>" and "<prod>"
+      Examples:
+
+      |prod|result|prod|
+      |bag |bag   |bag |
+      |lego|lego  |bag |
+
+
+
+
+
 
 
 
