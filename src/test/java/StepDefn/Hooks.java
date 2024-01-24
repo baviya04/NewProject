@@ -12,7 +12,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Hooks extends Commlib{
    //public static WebDriver driver;
-    @Test
     public void openbrowser() throws InterruptedException {
         //String exp="welcome";
         //System.setProperty("webdriver.chrome.driver","C:\\Users\\Home\\Downloads\\chromedriver\\chromedriver.exe");
